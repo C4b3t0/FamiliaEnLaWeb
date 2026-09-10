@@ -56,6 +56,25 @@ body {
   color: #777;
 }
 
+/* ===== Calendario responsivo =====
+   El iframe de Google Calendar trae ancho/alto fijos por defecto.
+   Este truco (padding-bottom en porcentaje) lo hace escalar con el contenedor. */
+.calendar-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* proporción alto/ancho del calendario */
+  height: 0;
+  overflow: hidden;
+}
+
+.calendar-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* ===== Pie de página ===== */
 .site-footer {
   text-align: center;
