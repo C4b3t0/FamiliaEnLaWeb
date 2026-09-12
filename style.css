@@ -75,6 +75,36 @@ body {
   height: 100%;
 }
 
+/* ===== Tarjeta de álbum de fotos ===== */
+.photo-card {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.photo-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.photo-card-title {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.photo-card-subtitle {
+  display: block;
+  color: #777;
+  font-size: 0.9rem;
+}
+
 /* ===== Pie de página ===== */
 .site-footer {
   text-align: center;
